@@ -1,44 +1,61 @@
 import React from 'react';
 
-import {FooterContainer,FooterWrap,FooterLinksWrapper,FooterLinksContainer,FooterLink,FooterLinkTitle,FooterLinksItems} from './FooterElements'
+import { FooterContainer, FooterWrap, FooterItemBody, FooterItemLinks, FooterItemHeading, FooterLink,FooterBottom,FooterCopy,FooterLogo,FooterSocial,FooterIcons } from './FooterElements';
+
+import {FaFacebook,FaTwitter,FaWhatsapp,FaInstagram} from 'react-icons/fa'
 
 const Footer = () => {
     return (
         <>
             <FooterContainer>
                 <FooterWrap>
-                    <FooterLinksContainer>
-                        <FooterLinksWrapper>
-                            <FooterLinksItems>
-                                <FooterLinkTitle>About</FooterLinkTitle>
-                                <FooterLink to='/signin'>How it works</FooterLink>
-                                <FooterLink to='/signin'>Testimonial</FooterLink>
-                                <FooterLink to='/signin'>Career</FooterLink>
-                            </FooterLinksItems>
-                            <FooterLinksItems>
-                                <FooterLinkTitle>Videos</FooterLinkTitle>
-                                <FooterLink to='/signin'>Steps on EBanking</FooterLink>
-                                <FooterLink to='/signin'>Get a referral</FooterLink>
-                                <FooterLink to='/signin'>Blog</FooterLink>
-                            </FooterLinksItems>
-                        </FooterLinksWrapper>
-                        <FooterLinksWrapper>
-                            <FooterLinksItems>
-                                <FooterLinkTitle>Contact</FooterLinkTitle>
-                                <FooterLink to='/signin'>08000706006</FooterLink>
-                                <FooterLink to='/signin'>09949490303</FooterLink>
-                                <FooterLink to='/signin'>0048588844</FooterLink>
-                            </FooterLinksItems>
-                            <FooterLinksItems>
-                                <FooterLinkTitle>Social Media</FooterLinkTitle>
-                                <FooterLink to='/signin'>Twitter</FooterLink>
-                                <FooterLink to='/signin'>Facebook</FooterLink>
-                                <FooterLink to='/signin'>Instagram</FooterLink>
-                                <FooterLink to='/signin'>Medium</FooterLink>
-                            </FooterLinksItems>
-                        </FooterLinksWrapper>
-                    </FooterLinksContainer>
+                    <FooterItemBody>
+                        <FooterItemLinks>
+                            <FooterItemHeading>About</FooterItemHeading>
+                            <FooterLink>How to use Bolla</FooterLink>
+                            <FooterLink>Blog</FooterLink>
+                            <FooterLink>Career</FooterLink>
+                        </FooterItemLinks>
+                         <FooterItemLinks>
+                            <FooterItemHeading>Contact</FooterItemHeading>
+                            <FooterLink>bolla@gmail.com</FooterLink>
+                            <FooterLink>(+234) 930039494</FooterLink>
+                            <FooterLink>(+234) 930039494</FooterLink>
+                        </FooterItemLinks>
+                    </FooterItemBody>
+                    <FooterItemBody>
+                        <FooterItemLinks>
+                            <FooterItemHeading>Location</FooterItemHeading>
+                            <FooterLink>Lagos</FooterLink>
+                            <FooterLink>Abuja</FooterLink>
+                            <FooterLink>Jos</FooterLink>
+                        </FooterItemLinks>
+                         <FooterItemLinks>
+                            <FooterItemHeading>About</FooterItemHeading>
+                            <FooterLink>How to use</FooterLink>
+                            <FooterLink>Blog</FooterLink>
+                            <FooterLink>Career</FooterLink>
+                        </FooterItemLinks>
+                    </FooterItemBody>
                 </FooterWrap>
+                <FooterBottom>
+                    <FooterLogo>Bolla</FooterLogo>
+                     <FooterCopy>Copyright @ {new Date().getFullYear()} All rights reserved.</FooterCopy>
+                    <FooterSocial>
+                        <FooterIcons>
+                            <FaFacebook/>
+                        </FooterIcons>
+                        <FooterIcons>
+                            <FaInstagram/>
+                        </FooterIcons>
+                        <FooterIcons>
+                            <FaWhatsapp/>
+                        </FooterIcons>
+                        <FooterIcons>
+                            <FaTwitter/>
+                        </FooterIcons>
+                    </FooterSocial>
+                </FooterBottom>
             </FooterContainer>
         </>
     )

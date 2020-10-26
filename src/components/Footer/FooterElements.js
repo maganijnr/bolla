@@ -1,67 +1,154 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 import { Link as LinkR } from 'react-router-dom';
 
 export const FooterContainer = styled.div`
       background:#101522;
-     
-`
-
-export const FooterWrap = styled.div`
+      color:#fff;
       display:flex;
-      padding:48px 24px;
       flex-direction:column;
+      width:100%;
+      padding:40px 20px;
+`
+export const FooterWrap = styled.div`
+      width:100%;
+      max-width:1000px;
+      padding:10px 30px;
+      display:flex;
+      flex-direction:row;
       align-items:center;
-      justify-content:center;
-      max-width:1100px;
+      justify-content:space-between;
       margin: 0 auto;
-`
 
-export const FooterLinksContainer = styled.div`
-      display:flex;
-      justify-content:center;
-
-      @media screen and (max-width: 820px){
-            padding-top:20px;
-      }
-`
-export const FooterLinksWrapper = styled.div`
-      display:flex;
-      @media screen and (max-width:820px){
+      @media screen and (max-width:568px){
             flex-direction:column;
       }
 `
+export const FooterItemBody = styled.div`
+      width:50%;
+      text-align:center;
+     display:flex;
+      flex-direction:row;
+      align-items:center;
+      justify-content:space-between;
+      margin: 0 auto 1rem;
 
-export const FooterLinksItems = styled.div`
+      @media screen and (max-width:768px){
+            flex-direction:column;
+      }
+      
+      @media screen and (max-width:568px){
+            flex-direction:column;
+      }
+
+      @media screen and (max-width:480px){
+            width:100%;
+            flex-direction:column;
+      }
+`
+export const FooterItemLinks = styled.div`
+      width:100%;
+      margin-bottom:1rem;
       display:flex;
       flex-direction:column;
-      align-items:flex-start;
-      margin:16px;
-      text-align:left;
-      width:160px;
-      box-sizing:border-box;
-      color:#fff;
+`
 
-      @media screen and (max-width:420px){
-            margin:0;
-            padding:10px;
-            width:100%;
+export const FooterItemHeading = styled.h2`
+      font-size:25px;
+      font-weight:500;
+      letter-spacing:1px;
+      margin-right:-1px;
+      margin-bottom:5px;
+
+      @media screen and (max-width:480px){
+            font-size:15px;
       }
 `
 
-export const FooterLinkTitle = styled.h2`
-      font-size:20px;
-      margin-bottom:15px;
-`
-
 export const FooterLink = styled(LinkR)`
-      color:#ccc;
+      font-size:15px;
+      font-weight:400;
+      letter-spacing:1px;
+      margin-right:-1px;
+      margin-bottom:5px;
       text-decoration:none;
-      font-size:14px;
-      margin-bottom:0.5rem;
+      color:#ccc;
+      cursor:pointer;
+
+       &:hover{
+            color:#ED2939;
+            transition: .5s all ease-in-out;
+      }
+
+        @media screen and (max-width:480px){
+            font-size:10px;
+      }
+
+`
+export const FooterBottom = styled.div`
+      border-top:.5px dotted #fff;
+      width:100%;
+      max-width:1200px;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap:12px;
+      margin: 0 auto;
+      align-items:center;
+      justify-content:space-between;
+      padding:20px 40px;
+
+      @media screen and (max-width: 568px){
+            grid-template-columns: 1fr;
+            grid-gap:16px;
+            padding:10px 20px 0;
+
+      }
+`
+export const FooterLogo = styled(LinkR)`
+      color:#fff;
+      text-decoration:none;
+      font-size:1.8rem;
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+
+       &:hover{
+            color:#ED2939;
+            transition: .5s all ease-in-out;
+      }
+
+`
+export const FooterCopy = styled.h3`
+       font-size:15px;
+       cursor:pointer;
 
       &:hover{
-            color:#ED1C24;
-            transition:.5s all ease-in-out;
+            color:#ED2939;
+            transition: .5s all ease-in-out;
+      }
+`
+export const FooterSocial = styled.div`
+      display:flex;
+      flex-direction:row;
+      align-items:center;
+      justify-content:space-between;
+      width:100px;
+`
+export const FooterIcons = styled(LinkR)`
+      font-size:20px;
+      color:#fff;
+      text-decoration:none;
+       &:hover{
+            color:#ED2939;
+            transition: .5s all ease-in-out;
+      }
+
+      @media screen and (max-width: 568px){
+            font-size:30px;
+            margin: 0 5px;
+      }
+
+      &:first-child{
+            margin-left:0;
       }
 `

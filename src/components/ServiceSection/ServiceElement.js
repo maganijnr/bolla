@@ -5,12 +5,14 @@ export const ServiceContainer = styled.div`
       padding: 10px 30px;
       background:#ccc;
       display:flex;
-      
+      align-items:center;
+     
 `
 export const ServiceWrap = styled.div`
       width:100%;
       display:flex;
       flex-direction:column;
+      margin-bottom:3rem;
 `
 
 export const ServiceHeading = styled.h2`
