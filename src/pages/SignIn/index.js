@@ -1,11 +1,11 @@
 import React from 'react'
 
-import SideBar from '../../components/SideBar';
+import SignInPage from '../../components/SignInPage';
 
 const SignIn = () => {
     return (
         <>
-            <h2>Sign In</h2>   
+            <SignInPage/>
         </>
     )
 }

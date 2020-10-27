@@ -2,9 +2,13 @@ import React from 'react';
 
 import { FooterContainer, FooterWrap, FooterItemBody, FooterItemLinks, FooterItemHeading, FooterLink,FooterBottom,FooterCopy,FooterLogo,FooterSocial,FooterIcons } from './FooterElements';
 
-import {FaFacebook,FaTwitter,FaWhatsapp,FaInstagram} from 'react-icons/fa'
+import { FaFacebook, FaTwitter, FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import { animateScroll as scroll} from 'react-scroll';
 
 const Footer = () => {
+    const toggleTop = () => {
+		scroll.scrollToTop();
+	}
     return (
         <>
             <FooterContainer>
@@ -39,7 +43,7 @@ const Footer = () => {
                     </FooterItemBody>
                 </FooterWrap>
                 <FooterBottom>
-                    <FooterLogo>Bolla</FooterLogo>
+                    <FooterLogo onClick={toggleTop}>Bolla</FooterLogo>
                      <FooterCopy>Copyright @ {new Date().getFullYear()} All rights reserved.</FooterCopy>
                     <FooterSocial>
                         <FooterIcons>

@@ -89,15 +89,15 @@ export const FooterBottom = styled.div`
       border-top:.5px dotted #fff;
       width:100%;
       max-width:1200px;
-      display:grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap:12px;
+      display:flex;
+      flex-direction:row;
       margin: 0 auto;
       align-items:center;
       justify-content:space-between;
       padding:20px 40px;
 
       @media screen and (max-width: 568px){
+            display:grid;
             grid-template-columns: 1fr;
             grid-gap:16px;
             padding:10px 20px 0;
@@ -133,6 +133,7 @@ export const FooterSocial = styled.div`
       align-items:center;
       justify-content:space-between;
       width:100px;
+      margin-top:5px;
 `
 export const FooterIcons = styled(LinkR)`
       font-size:20px;

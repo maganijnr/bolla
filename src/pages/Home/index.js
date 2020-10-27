@@ -11,19 +11,12 @@ import Footer from '../../components/Footer';
 
 //Data
 import {homeObjOne,homeObjTwo,homeObjThree } from '../../components/InfoSection/Data';
-import NavBar from '../../components/NavBar';
 
 
-const Home = () => {
-    const [toggle, setToggle] = useState(false);
-
-    const navToggle = () => {
-        setToggle(!toggle);
-    }
+const Home = ({navToggle,toggle}) => {
     return (
         <>
             <SideBar navToggle={navToggle} toggle={toggle} />
-            <NavBar navToggle={navToggle} />
             <HeroSection />
             <InfoSection {...homeObjOne} />
             <InfoSection {...homeObjTwo} />

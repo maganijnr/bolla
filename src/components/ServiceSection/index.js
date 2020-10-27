@@ -6,7 +6,7 @@ import { ServiceContainer,ServiceWrap,ServiceHeading,ServiceCards,Card,CardIcon,
 const ServiceSection = () => {
     return (
         <>
-			<ServiceContainer>
+			<ServiceContainer id="service">
 				<ServiceWrap>
 					<ServiceHeading>Our Services</ServiceHeading>
 					<ServiceCards>

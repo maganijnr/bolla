@@ -13,7 +13,8 @@ export const homeObjOne = {
       alt: 'Car',
       dark: true,
       primary: true,
-      darkText: false
+      darkText: false,
+      redirectLink: '/',
 }
 
 export const homeObjTwo = {
@@ -31,7 +32,8 @@ export const homeObjTwo = {
       alt: 'Piggy bank',
       dark: false,
       primary: false,
-      darkText: true
+      darkText: true,
+      redirectLink: '/',
 }
 
 export const homeObjThree = {
@@ -39,15 +41,16 @@ export const homeObjThree = {
       lightBg: false,
       lightText: true,
       lightTextDesc: true,
-      topLine: 'Premium Bank',
+      topLine: 'Free Account',
       headline: 'Unlimited Transactions with zero fees',
-      description: 'Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.',
+      description:"Sign up means to register; to create an account. In computing, sign in and log in are synonyms. Both mean to open a session with an account that is already created.",
       direction:'row',
-      buttonLabel: 'Get started',
+      buttonLabel: 'Create Account',
       imgStart: false,
-      img: require('../images/paper.svg'),
+      img: require('../images/sign-in.svg'),
       alt: 'Paper',
       dark: true,
       primary: true,
-      darkText: false
+      darkText: false,
+      redirectLink: '/signup',
 }
