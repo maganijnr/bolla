@@ -10,7 +10,7 @@ const SignUpPage = () => {
                     <Icon to="/">Dolla</Icon>
                     <FormContent>
                         <Form action="#">
-                            <FormH1>Sign in your account</FormH1>
+                            <FormH1>Create an account</FormH1>
                             <FormGroup>
                                 <FormLabel htmlFor="for">Full Name</FormLabel>
                                 <FormInput type="name" />
