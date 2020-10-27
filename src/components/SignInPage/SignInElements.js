@@ -60,7 +60,8 @@ export const FormH1 = styled.h1`
       text-transform:uppercase;
 
       @media screen and (max-width:480px){
-            font-size:120px;
+            font-size:12px;
+            text-align:center;
       }
 `
 export const FormGroup = styled.div`
