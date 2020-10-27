@@ -7,7 +7,7 @@ const SignUpPage = () => {
         <>
             <SignInContainer>
                 <FormWrap>
-                    <Icon to="/">Dolla</Icon>
+                    <Icon to="/">Bolla</Icon>
                     <FormContent>
                         <Form action="#">
                             <FormH1>Create an account</FormH1>

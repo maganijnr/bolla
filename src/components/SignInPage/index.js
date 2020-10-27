@@ -7,7 +7,7 @@ const SignInPage = () => {
         <>
             <SignInContainer>
                 <FormWrap>
-                    <Icon to="/">Dolla</Icon>
+                    <Icon to="/">Bolla</Icon>
                     <FormContent>
                         <Form action="#">
                             <FormH1>Sign in your account</FormH1>
